@@ -3,26 +3,35 @@
 
     @include('layouts.refs.head')
 
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-base-100">
+    <body class="antialiased bg-base-100 text-base-content relative">
 
-            <!-- Barra de navegación superior -->
+        <!-- 1. NAVBAR -->
+        <header class="fixed top-0 w-full z-50 h-16 bg-base-100 border-b border-base-200">
             @include('layouts.navigation')
+        </header>
 
-            <!-- Cabecera de página -->
-            @isset($header)
-                <header class="bg-white shadow-sm">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
+        <!-- 2. CONTENEDOR PRINCIPAL -->
+        <div class="drawer lg:drawer-open flex-1 pt-16">
+            <input id="sidebar-drawer" type="checkbox" class="drawer-toggle" />
+            
+            <!-- CONTENIDO CENTRAL -->
+            <div class="drawer-content flex flex-col">
+                <main class="flex-1 p-4 w-full">
+                    <div class="max-w-350 w-full mx-auto py-4 px-1 sm:px-2.5 lg:px-8">
+                        {{ $slot }}
                     </div>
-                </header>
-            @endisset
+                </main>
+            </div>
 
-            <!-- Contenido de página -->
-            <main>
-                {{ $slot }}
-            </main>
+            <!-- 3. SIDEBAR -->
+            @include('layouts.sidebar')
         </div>
+
+        <script>
+            document.fonts.ready.then(() => {
+                document.documentElement.classList.add('fonts-loaded');
+            });
+        </script>
     </body>
 
 </html>
