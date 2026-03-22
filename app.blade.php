@@ -14,17 +14,18 @@
         <div class="drawer lg:drawer-open flex-1 pt-16">
             <input id="sidebar-drawer" type="checkbox" class="drawer-toggle" />
             
+            <!-- 3. SIDEBAR -->
+            @include('layouts.sidebar')
+            
             <!-- CONTENIDO CENTRAL -->
             <div class="drawer-content flex flex-col">
-                <main class="flex-1 p-4 w-full">
-                    <div class="max-w-350 w-full mx-auto py-4 px-1 sm:px-2.5 lg:px-8">
+                <main class="flex-1 p-4 w-full overflow-hidden">
+                    <div class="max-w-350 w-full h-[calc(100vh-96px)] no-scrollbar overflow-y-scroll mx-auto py-4 px-1 sm:px-2.5 lg:px-8">
                         {{ $slot }}
                     </div>
                 </main>
             </div>
 
-            <!-- 3. SIDEBAR -->
-            @include('layouts.sidebar')
         </div>
 
         <script>
@@ -32,6 +33,7 @@
                 document.documentElement.classList.add('fonts-loaded');
             });
         </script>
+        @stack('scripts')
     </body>
 
 </html>

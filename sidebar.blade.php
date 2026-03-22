@@ -19,11 +19,11 @@
         class="w-full 430:w-72 bg-base-100 h-full duration-300 border-r border-[#e9e9e9a6] dark:border-[#e9e9e90c] flex flex-col text-base-content">
 
         <div class="flex-1 overflow-y-auto no-scrollbar pt-4 px-4">
-            <ul class="menu menu-md p-0 rounded-box w-full gap-1">
+            <ul class="menu menu-md p-0 rounded-box w-full gap-1 pb-14.25">
 
                 <!-- INICIO (Siempre visible) -->
                 <li>
-                    <a class="px-2.25 active:bg-neutral active:text-white dark:active:text-black" href="#inicio"
+                    <a class="px-2.25 active:bg-neutral active:text-white dark:active:text-black" href="/home"
                         @click="setActive('inicio')"
                         :class="isActive('inicio') ? 'bg-black/5 dark:bg-white/10 font-medium' : ''">
                         <span class="material-symbols-rounded text-[20px]!">home</span>
@@ -67,7 +67,7 @@
                         @endphp
 
                         <li>
-                            <details :open="hasActiveChild({{ $childSlugs }})">
+                            <details :open="hasActiveChild({{ $childSlugs }})" class="grid gap-1">
                                 <summary
                                     class="text-[#0e1016] dark:text-[#d4dce7] text-[14.5px] active:bg-transparent hover:bg-black/5 dark:hover:bg-white/10">
                                     <span class="material-symbols-rounded text-[20px]!">{{ $module->icono ?? 'folder' }}</span>
@@ -106,7 +106,7 @@
 
         <!-- VERSIÓN DEL SISTEMA -->
         <div
-            class="py-1.25 pb-5 pr-5 pl-3 430:pl-5 sm:px-7 bg-base-100/50 flex items-center justify-center 430:justify-start gap-5">
+            class="fixed bottom-0 left-0 right-0 py-1.25 pb-5 pr-5 pl-3 430:pl-5 sm:px-7 bg-base-100 flex items-center justify-center 430:justify-start gap-5">
             <img src="{{ asset('/tmaz-logo-50.png') }}" alt="LOGO TMAZ">
             <p class="relative top-[8.5px] m-0 text-xs text-base-content/70 font-medium">©2026 &nbsp; v1.0.0</p>
         </div>
