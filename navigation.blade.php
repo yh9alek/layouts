@@ -1,4 +1,4 @@
-<nav class="navbar w-full flex justify-between bg-[#275DAE] dark:bg-[#0E1A31] text-white border-b border-base-200 px-4 sm:px-6">
+<nav class="navbar w-full flex justify-between color-base text-white border-b border-base-200 px-4 sm:px-6">
     <div class="flex gap-2">
         <div class="flex">
 
@@ -42,14 +42,14 @@
         <!-- ÍCONO DE PERFIL -->
         <div class="dropdown dropdown-end ml-1">
             <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar placeholder">
-                <div class="bg-[#3871c7] dark:bg-[#16315D] text-white grid place-items-center rounded-full w-10">
+                <div class="bg-[#4177A8] dark:bg-[#16315D] text-white grid place-items-center rounded-full w-10">
                     <span class="text-sm font-semibold">{{ $iniciales }}</span>
                 </div>
             </div>
             <div tabindex="0" class="dropdown-content bg-base-100 rounded-box z-1 w-72 shadow-lg border border-base-200 mt-3 p-0 overflow-hidden">
                 <div class="flex flex-col items-center border-b border-base-300 dark:border-base-200 py-6 bg-base-200/50">
                     <div class="avatar placeholder mb-3">
-                        <div class="bg-[#3871c7] dark:bg-[#16315D] text-white grid place-items-center rounded-full w-16">
+                        <div class="bg-[#4177A8] dark:bg-[#16315D] text-white grid place-items-center rounded-full w-16">
                             <span class="text-xl font-bold">{{ $iniciales }}</span>
                         </div>
                     </div>
