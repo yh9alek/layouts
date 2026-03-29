@@ -1,6 +1,7 @@
-<div class="drawer-side [&>*]:duration-225 z-40 top-16 h-[calc(100vh-4rem)]">
+<div class="drawer-side [&>*]:duration-225 z-40 top-16 h-[calc(100dvh-4rem)]">
     <label for="sidebar-drawer" aria-label="close sidebar" class="drawer-overlay bg-black/20"></label>
-    <aside x-data="{
+    <aside 
+    x-data="{
         activeModule: localStorage.getItem('sidebar_active_module') || 'inicio',
 
         setActive(slug) {
@@ -16,7 +17,7 @@
             return childSlugs.includes(this.activeModule);
         }
     }"
-        class="w-full 430:w-72 bg-base-100 h-full duration-300 border-r border-[#e9e9e9a6] dark:border-[#e9e9e90c] flex flex-col text-base-content">
+    class="w-full 430:w-72 bg-base-100 h-full duration-300 border-r border-[#e9e9e9a6] dark:border-[#e9e9e90c] flex flex-col text-base-content">
 
         <div class="flex-1 overflow-y-auto no-scrollbar pt-4 px-4">
             <ul class="menu menu-md p-0 rounded-box w-full gap-1 pb-14.25">
