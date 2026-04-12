@@ -20,6 +20,8 @@
         }
     </script>
 
+    @include('sweetalert2::index')
+
     <!-- Scripts -->
     @vite(['resources/assets/css/app.css', 'resources/assets/js/app.js'])
 </head>
