@@ -24,4 +24,5 @@
 
     <!-- Scripts -->
     @vite(['resources/assets/css/app.css', 'resources/assets/js/app.js'])
+    @vite(['resources/assets/js/jstree.min.js', 'resources/assets/css/style.min.css']);
 </head>
