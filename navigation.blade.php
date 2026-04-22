@@ -4,9 +4,7 @@
 
             <!-- Logo -->
             <div class="shrink-0 flex items-center">
-                <a href="{{ route('home') }}">
-                    <x-app.application-logo class="block h-9 w-auto fill-current" />
-                </a>
+                
             </div>
 
             <div class="space-x-8 sm:-my-px ms-3 sm:ms-4 lg:ms-5 flex">

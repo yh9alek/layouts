@@ -11,7 +11,7 @@
         </header>
 
         <!-- 2. CONTENEDOR PRINCIPAL -->
-        <div class="drawer lg:drawer-open flex-1 pt-16">
+        <div class="drawer lg:drawer-open flex-1 pt-10">
             <input id="sidebar-drawer" type="checkbox" class="drawer-toggle" />
             
             <!-- 3. SIDEBAR -->
