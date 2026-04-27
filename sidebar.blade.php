@@ -47,7 +47,7 @@
         }
     }"
 
-    class="w-full 430:w-72 bg-base-100 h-full duration-300 border-r border-[#e9e9e9a6] dark:border-[#e9e9e90c] flex flex-col text-base-content">
+    class="w-full 2xs:w-72 bg-base-100 h-full duration-300 border-r border-[#e9e9e9a6] dark:border-[#e9e9e90c] flex flex-col text-base-content">
 
         <div class="flex-1 overflow-y-auto no-scrollbar pt-4 px-4">
             <ul class="menu menu-md p-0 rounded-box w-full gap-1 pb-14.25">
@@ -146,7 +146,7 @@
 
         <!-- VERSIÓN DEL SISTEMA -->
         <div
-            class="fixed bottom-0 left-0 right-0 py-1.25 pb-5 pr-5 pl-3 430:pl-5 sm:px-7 bg-base-100 flex items-center justify-center 430:justify-start gap-5">
+            class="fixed bottom-0 left-0 right-0 py-1.25 pb-5 pr-5 pl-3 2xs:pl-5 sm:px-7 bg-base-100 flex items-center justify-center 2xs:justify-start gap-5">
             <img src="{{ asset('/tmaz-logo-sidebar.png') }}" class="w-12.5 h-8" alt="LOGO TMAZ">
             <p class="relative top-[8.5px] m-0 text-xs text-base-content/70 font-medium">©2026 &nbsp; v1.0.0</p>
         </div>

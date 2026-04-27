@@ -22,6 +22,7 @@
                 <main class="flex-1 p-4 w-full overflow-hidden">
                     <div class="max-w-350 w-full h-[calc(100vh-96px)] no-scrollbar overflow-y-scroll mx-auto py-4 px-1 sm:px-2.5 lg:px-8">
                         {{ $slot }}
+                        <div class="mb-12"></div>
                     </div>
                 </main>
             </div>

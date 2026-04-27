@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="bg-white bg-no-repeat! bg-fixed! bg-center" style="background-image: url('{{ asset('/terminal1_1920.jpg') }}');">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="bg-white bg-no-repeat! bg-fixed!" style="background-image: url('{{ asset('/terminal1_1920.jpg') }}');">
     
     @include('layouts.refs.head')
 
